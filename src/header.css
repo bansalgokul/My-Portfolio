@@ -1,0 +1,100 @@
+/** @format */
+
+:root {
+	--primary-darkbg: #020202;
+	--secondary-darkbg: #262626;
+	--primary-main: #f8f9fa;
+	--secondary-main: #c1121f;
+	--secondary-text: #dee2e6;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0.5rem 1rem;
+	display: flex;
+	z-index: 3;
+	justify-content: space-between;
+	align-items: baseline;
+	width: 100%;
+	background-color: var(--secondary-darkbg);
+}
+
+.navigation {
+	display: flex;
+	gap: 1rem;
+}
+
+.hrNav {
+	display: none;
+}
+
+.hrNav_ul {
+	display: flex;
+	list-style: none;
+	gap: 1rem;
+}
+
+.darkMode,
+.lightMode,
+.mobOpen,
+.mobClose {
+	font-size: 1.25rem;
+}
+
+.modeHidden {
+	display: none;
+}
+
+.ocHidden {
+	display: none;
+}
+
+.mobClose {
+	position: fixed;
+	z-index: 2;
+	top: 2%;
+	right: 55%;
+}
+
+.vrNav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 62.5%;
+	background-color: var(--secondary-main);
+}
+
+.vrNav_ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 1rem;
+	height: 100vh;
+	align-items: center;
+	font-size: 1.25rem;
+	margin-top: 1rem;
+}
+
+.vrNav_hidden {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.hrNav {
+		display: flex;
+	}
+
+	.vrNav,
+	.mobOpen,
+	.mobClose {
+		display: none;
+	}
+}

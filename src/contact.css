@@ -1,0 +1,83 @@
+/** @format */
+
+:root {
+	--primary-darkbg: #020202;
+	--secondary-darkbg: #262626;
+	--primary-main: #f8f9fa;
+	--secondary-main: #c1121f;
+	--secondary-text: #dee2e6;
+}
+
+.contact {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	gap: 1.5rem;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+	min-height: calc(100vh - 6rem);
+}
+
+.contactLinks {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contactMail,
+.contactPhone {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.contactReferences {
+	font-size: 1.5rem;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.contactLinks_resume {
+	background-color: var(--secondary-main);
+	border: none;
+	color: var(--primary-main);
+	padding: 1rem 2rem;
+	width: fit-content;
+}
+
+.contactForm_form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contactForm_input {
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: var(--secondary-darkbg);
+	color: var(--primary-main);
+	border: none;
+}
+
+.contactForm_submit {
+	background-color: var(--secondary-main);
+	border: none;
+	color: var(--primary-main);
+	padding: 1rem 2rem;
+	width: fit-content;
+}
+
+@media screen and (min-width: 768px) {
+	.contact {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.contactForm {
+		position: relative;
+		top: 50px;
+	}
+}

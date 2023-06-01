@@ -1,0 +1,29 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;600;700;800&display=swap");
+
+:root {
+	--primary-darkbg: #020202;
+	--secondary-darkbg: #262626;
+	--primary-main: #f8f9fa;
+	--secondary-main: #c1121f;
+	--secondary-text: #dee2e6;
+}
+
+.hero {
+	margin-top: 4rem;
+	margin-bottom: 1rem;
+	height: calc(100vh - 6rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1em;
+}
+
+.hero_h3 {
+	font-weight: 500;
+	font-style: italic;
+}
+
+.hero_h1 {
+	width: 70%;
+}

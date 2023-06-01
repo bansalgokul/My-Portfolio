@@ -1,0 +1,142 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+input,
+button,
+textarea {
+	font: inherit;
+}
+
+:root {
+	--primary-darkbg: #020202;
+	--secondary-darkbg: #262626;
+	--primary-main: #f8f9fa;
+	--secondary-main: #c1121f;
+	--secondary-text: #dee2e6;
+}
+
+html {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+}
+
+body {
+	/* background: url(../img/phone-background.png); */
+	background-color: var(--primary-darkbg);
+	color: var(--primary-main);
+	max-width: 100vw;
+	min-height: 100vh;
+	padding: 1em 2em;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* .contact {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.contact h2 {
+	font-size: 2em;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.contact-mail {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+}
+
+.contact-mail i {
+	color: var(--secondary-main);
+	background-color: var(--primary-darkbg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.35em;
+}
+
+.contact-phone {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+}
+
+.contact-phone i {
+	background-color: var(--secondary-main);
+	color: var(--primary-darkbg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.25em;
+}
+
+.contact-links {
+	font-size: 2em;
+	color: var(--secondary-textg);
+}
+
+.download-resume,
+.form-submit {
+	padding: 1em;
+	background-color: var(--secondary-main);
+	color: var(--primary-main);
+	border: none;
+	width: 60%;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.form-label {
+	display: flex;
+}
+
+form input,
+textarea {
+	padding: 0.75em 1em;
+	width: 100%;
+	background-color: var(--secondary-darkbg);
+	border: none;
+} */
