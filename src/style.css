@@ -140,3 +140,75 @@ textarea {
 	background-color: var(--secondary-darkbg);
 	border: none;
 } */
+
+/** @format */
+
+.work {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+.project {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+	/* max-width: 100%; */
+}
+
+.workCard {
+	max-width: 500px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	background-color: var(--secondary-darkbg);
+
+	position: relative;
+}
+
+.cardHeader {
+	width: 100%;
+	height: 50%;
+}
+
+.cardHeader img {
+	border-radius: 10px 10px 0 0;
+}
+
+.cardBody {
+	padding: 1rem;
+	display: flex;
+	justify-content: flex-start;
+	gap: 1rem;
+	flex-direction: column;
+}
+
+.cardFooter {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+	border-radius: 0 0 10px 10px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background-color: var(--secondary-main);
+}
+
+.cardFooter a {
+	width: 50%;
+	background-color: var(--secondary-main);
+	text-align: center;
+	padding: 1rem 1rem;
+}
+
+.cardFooter a:first-of-type {
+	border-right: 2px solid var(--primary-darkbg);
+	border-radius: 0 0 0 10px;
+}
+
+.cardFooter a:nth-of-type(2) {
+	border-radius: 0 0 10px 0;
+}

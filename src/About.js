@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./about.css";
-import profile from "./assets/profile.jpg";
+import profile from "./assets/profile.JPG";
 
 const About = () => {
     const [box, setBox] = useState("abBar_skills");
@@ -10,10 +10,10 @@ const About = () => {
     };
 
     return (
-        <section className="about">
+        <section className="about" id='about'>
             <div className="abProfile">
                 <figure className='abProfile_fig'>
-                    <img src={profile} alt="Profile pic" className='abProfile_img' width="1740" height="2012"/>
+                    <img src={profile} alt="Profile pic" className='abProfile_img' width="1740" height="2012" />
                     <figcaption className='abProfile_cap'></figcaption>
                 </figure>
             </div>
@@ -28,26 +28,26 @@ const About = () => {
                 </p>
                 <div className="abBar">
                     <h3 className={box === "abBar_skills" ? "abBar_head abBar_active" : "abBar_head"} onClick={handleAbBoxChange} id='abBar_skills'>Skills</h3>
-                    <h3 className={box === "abBar_exp" ? "abBar_head abBar_active" : "abBar_head"} onClick={handleAbBoxChange} id='abBar_exp'>Experience</h3>
-                    <h3 className={box === "abBar_edu" ? "abBar_head abBar_active" : "abBar_head"} onClick={handleAbBoxChange} id='abBar_edu'>Education</h3>
+                    {/* <h3 className={box === "abBar_exp" ? "abBar_head abBar_active" : "abBar_head"} onClick={handleAbBoxChange} id='abBar_exp'>Experience</h3>
+                    <h3 className={box === "abBar_edu" ? "abBar_head abBar_active" : "abBar_head"} onClick={handleAbBoxChange} id='abBar_edu'>Education</h3> */}
                 </div>
                 <div className={box === "abBar_skills" ? "abBox" : "abBox abBox_hidden"} id="abBox_skills">
+                    <ul className='abBox_ul'>
+                        <li className='abBox_li'>Nodejs</li>
+                        <li className='abBox_li'>React</li>
+                        <li className='abBox_li'>MongoDB</li>
+                        <li className='abBox_li'>Express</li>
+                        <li className='abBox_li'>Javascript</li>
+                        <li className='abBox_li'>C++</li>
+                    </ul>
+                </div>
+                {/* <div className={box === "abBar_exp" ? "abBox" : "abBox abBox_hidden"} id='abBox_exp'>
                     <ul className='abBox_ul'>
                         <li className='abBox_li'>HTML</li>
                         <li className='abBox_li'>CSS</li>
                         <li className='abBox_li'>Javascript</li>
                         <li className='abBox_li'>React JS</li>
                         <li className='abBox_li'>C++</li>
-                        <li className='abBox_li'>DSA</li>
-                    </ul>
-                </div>
-                <div className={box === "abBar_exp" ? "abBox" : "abBox abBox_hidden"} id='abBox_exp'>
-                    <ul className='abBox_ul'>
-                        <li className='abBox_li'>HTML</li>
-                        <li className='abBox_li'>CSS</li>
-                        <li className='abBox_li'>Javascript</li>
-                        <li className='abBox_li'>React JS</li>
-                        {/* <li className='abBox_li'>C++</li> */}
                         <li className='abBox_li'>DSA</li>
                     </ul>
                 </div>
@@ -58,9 +58,9 @@ const About = () => {
                         <li className='abBox_li'>Javascript</li>
                         <li className='abBox_li'>React JS</li>
                         <li className='abBox_li'>C++</li>
-                        {/* <li className='abBox_li'>DSA</li> */}
+                        <li className='abBox_li'>DSA</li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         </section>
     )

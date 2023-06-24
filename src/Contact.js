@@ -1,11 +1,29 @@
 import React from 'react';
 import "./contact.css";
+import resume from "./assets/resume.pdf";
 import { GrMail } from "react-icons/gr";
+import emailjs from "emailjs-com";
 import { BsFillTelephoneFill, BsGithub, BsLinkedin, BsTwitter, BsInstagram } from "react-icons/bs";
 
 const Contact = () => {
+    const handleSubmit = (event) => {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Send email using EmailJS
+        emailjs.sendForm('service_xm4fltc', 'template_fyh1rus', event.target, 'ZA09fTGjZz6fu-yz2')
+            .then((response) => {
+                console.log('Email sent successfully!', response.text);
+            })
+            .catch((error) => {
+                console.error('Error sending email:', error);
+            });
+
+        // Reset the form
+        event.target.reset();
+    };
+
     return (
-        <section className="contact">
+        <section className="contact" id='contact'>
             <div className="contactLinks">
                 <h2 className='contactLinks_h2'>Contact Me</h2>
                 <div className="contactMail">
@@ -30,10 +48,10 @@ const Contact = () => {
                         <BsInstagram />
                     </a>
                 </div>
-                <button className="contactLinks_resume">Download Resume</button>
+                <a href={resume} download className="contactLinks_resume">Download Resume</a>
             </div>
             <div className="contactForm">
-                <form action="" method="post" className='contactForm_form'>
+                <form action="" method="post" className='contactForm_form' onSubmit={handleSubmit}>
                     <label className="contactForm_label" htmlFor="name">
                         <input type="text" id="name" name="namme" placeholder="Your Name" className="contactForm_input" />
                     </label>

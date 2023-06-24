@@ -41,8 +41,6 @@
 	background-color: var(--secondary-darkbg);
 	padding: 1rem;
 	border-radius: 5px;
-	height: 205px;
-	overflow: auto;
 }
 
 .abBox_ul {
