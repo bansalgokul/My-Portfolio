@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.8df28d28.css",
-    "main.js": "/My-Portfolio/static/js/main.8c47f0a7.js",
-    "static/media/profile.jpg": "/My-Portfolio/static/media/profile.9b0c73485d9053aa1405.jpg",
+    "main.css": "/My-Portfolio/static/css/main.13b57822.css",
+    "main.js": "/My-Portfolio/static/js/main.e57996ad.js",
+    "static/media/profile.JPG": "/My-Portfolio/static/media/profile.3b49a0f9fdf0d0ec67df.JPG",
+    "static/media/blogWebsite.png": "/My-Portfolio/static/media/blogWebsite.c8d04ee53b86e693bd04.png",
+    "static/media/snews.png": "/My-Portfolio/static/media/snews.65bcc88d1b3cb8005be4.png",
+    "static/media/resume.pdf": "/My-Portfolio/static/media/resume.44a62df6501fccda3a3a.pdf",
+    "static/media/introComponent.png": "/My-Portfolio/static/media/introComponent.adf3a22263d2e7daa201.png",
+    "static/media/snake-game.png": "/My-Portfolio/static/media/snake-game.b1ca36e3de41a9edf851.png",
     "index.html": "/My-Portfolio/index.html",
-    "main.8df28d28.css.map": "/My-Portfolio/static/css/main.8df28d28.css.map",
-    "main.8c47f0a7.js.map": "/My-Portfolio/static/js/main.8c47f0a7.js.map"
+    "main.13b57822.css.map": "/My-Portfolio/static/css/main.13b57822.css.map",
+    "main.e57996ad.js.map": "/My-Portfolio/static/js/main.e57996ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.8df28d28.css",
-    "static/js/main.8c47f0a7.js"
+    "static/css/main.13b57822.css",
+    "static/js/main.e57996ad.js"
   ]
 }
