@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./about.css";
-import profile from "./assets/profile.JPG";
+import profile from "./assets/profile.jpg";
 
 const About = () => {
     const [box, setBox] = useState("abBar_skills");
